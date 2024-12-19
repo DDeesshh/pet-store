@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --------------------шрифты-------------------- */
+
+a {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600 !important;
+  font-size: 40px !important;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500 !important;
+  font-size: 25px !important;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  font-style: normal;
+}
+
+p,
+::placeholder {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500 !important;
+  font-size: 15px !important;
+  font-style: normal;
+}
+
+/* --------------------настройки на сайте-------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #ede7f1;
+}
+
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 8px;
+  height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D5C6E0;
+  width: 8px;
+  height: 2px;
+}
+
+/* --------------------кнопки-------------------- */
+
+.nav-link:hover {
+  color: #967AA1 !important;
+}
+
+.nav-btn,
+.carusel-btn,
+.card-btn,
+.cart-btn {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+
+  border-radius: 100px;
   color: white;
+  background: #000000;
+  width: 140%;
+  height: 56px;
+  border: none;
+  transition: 0.4s;
+  text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-btn:hover,
+.cart-btn:hover {
+  transition: 0.4s;
+  background-color: transparent;
+  color: #967AA1;
+  border: #967AA1 2px solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-btn:active,
+.carusel-btn:active,
+.card-btn:active,
+.cart-btn:active {
+  transform: translateY(2px);
+}
+
+.nav-btn {
+  width: 180px;
+}
+
+.carusel-btn {
+  width: 50%;
+}
+
+.card-btn {
+  width: 100%;
+  height: 50px;
+}
+
+.carusel-btn:hover,
+.card-btn:hover {
+  transition: 0.4s;
+  background-color: transparent;
+  color: #000000;
+  border: #000000 2px solid;
+}
+
+/* --------------------home-------------------- */
+
+/* карусель */
+.carousel-inner {
+  border-radius: 50px !important;
+}
+
+.carousel-caption {
+  top: 13% !important;
+  right: 30% !important;
+}
+
+.carousel-background {
+  background-color: #d9cfe182;
+  border-radius: 50px !important;
+  backdrop-filter: blur(1px);
+}
+
+/* cart */
+
+.cart-modal{
+  border-radius: 30px !important;
+}
+
+/* --------------------products-------------------- */
+
+.card-products {
+  background-color: #D5C6E0 !important;
+  border-radius: 30px !important;
+  width: 21rem !important;
+  padding-top: 30px;
+  border: none !important;
+}
+
+.card-img-top {
+  transition: transform 0.5s;
+}
+
+.card-img-top:hover {
+  transform: scale(0.95);
+  cursor: pointer;
+}
+
+.card-reviews,
+.card-price {
+  background-color: white;
+  border-radius: 30px !important;
+  padding: 9px;
+}
+
+/* --------------------product-------------------- */
+
+.card-product {
+  background-color: #D5C6E0 !important;
+  border-radius: 30px !important;
+  width: 28rem !important;
+  padding-top: 30px;
+  border: none !important;
+  padding-bottom: 28px;
+}
+
+/* --------------------contacts-------------------- */
+
+input,
+textarea {
+  border-radius: 30px !important;
+  height: 50px;
+}
+
+.form-background {
+  background-color: #D5C6E0 !important;
+  border-radius: 30px !important;
 }
